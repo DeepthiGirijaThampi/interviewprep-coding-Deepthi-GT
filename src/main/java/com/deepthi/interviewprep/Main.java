@@ -12,5 +12,13 @@ public class Main {
         //method overriding example
         Dog dog = new Dog();
         dog.makeSound(); // Output: Dog barks
+
+        // Encapsulation example
+        UrlService urlService = new UrlService();
+        String oUrl = "https://www.example.com";
+        String sUrl = urlService.generateUrl(oUrl);
+
+        System.out.println("Original URL: " + oUrl);
+        System.out.println("Shortened URL: " +"example/"+ sUrl);
     }
 }

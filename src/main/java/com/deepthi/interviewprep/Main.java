@@ -55,7 +55,7 @@ public class Main {
         boolean op = spObj.isAnagram("listen","silent");
         System.out.println(op);
 
-        //Stack problems
+        //Stack problems..
         StackProblems st = new StackProblems();
         st.machingParanthesis();
     }

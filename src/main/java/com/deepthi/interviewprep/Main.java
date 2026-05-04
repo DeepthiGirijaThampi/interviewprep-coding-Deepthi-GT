@@ -20,5 +20,43 @@ public class Main {
 
         System.out.println("Original URL: " + oUrl);
         System.out.println("Shortened URL: " +"example/"+ sUrl);
+
+        //Two sum
+        TwoSum twoSum = new TwoSum();
+        int[] nums = {2,12,7,16,7};
+        int target = 9;
+        int[] result = twoSum.twoSum(nums, target);
+        System.out.println(result[0]+","+result[1]);
+
+        //Two sum optimized
+        int[] optimizedResult = twoSum.twoSumOptimized(nums,target);
+        System.out.println(optimizedResult[0]+","+optimizedResult[1]);
+
+        //Duplicates
+        Duplicates obj = new Duplicates();
+        boolean res = obj.duplicate(nums);
+        System.out.println(res);
+
+        //without set
+        boolean res1 = obj.dublicateNotUnsingSet(nums);
+        System.out.println(res1);
+
+        //String Palindrome
+        StringPalindrome sp = new StringPalindrome();
+        boolean val = sp.isStringPalindrome("Malayalam");
+        System.out.println(val);
+
+        //first non-repeating character
+        StringProblems spObj = new StringProblems();
+        int index = spObj.returnNonRepeatingIndex("malayalam");
+        System.out.println("Index = "+index);
+
+        //Anagrams
+        boolean op = spObj.isAnagram("listen","silent");
+        System.out.println(op);
+
+        //Stack problems
+        StackProblems st = new StackProblems();
+        st.machingParanthesis();
     }
 }

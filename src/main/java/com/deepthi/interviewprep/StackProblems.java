@@ -21,8 +21,9 @@ public class StackProblems {
 
 
     Scanner sc = new Scanner(System.in);
-    public void machingParanthesis(){
 
+    public void machingParanthesis(){
+        System.out.println("Enter the pattern : \n");
         while(sc.hasNext()){
             String input = sc.next();
             Stack<Character> stack = new Stack<>();
@@ -46,6 +47,7 @@ public class StackProblems {
             }
 
             System.out.println(stack.isEmpty());
+            break;
         }
     }
 

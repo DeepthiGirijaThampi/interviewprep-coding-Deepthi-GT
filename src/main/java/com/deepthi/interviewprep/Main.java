@@ -1,5 +1,7 @@
 package com.deepthi.interviewprep;
 
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -58,5 +60,38 @@ public class Main {
         //Stack problems..
         StackProblems st = new StackProblems();
         st.machingParanthesis();
+
+        //java generics
+        JavaGenerics jg = new JavaGenerics();
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter number of elements : ");
+
+        // Read integers
+        int n = sc.nextInt();
+        Integer[] intArray = new Integer[n];
+        System.out.println("Enter the int elements : ");
+        for (int i = 0; i < n; i++) {
+
+            intArray[i] = sc.nextInt();
+
+        }
+
+        //Important: consume leftover newline
+        sc.nextLine();
+
+        // Read strings
+        System.out.println("Enter number of elements : ");
+        int s = sc.nextInt();
+        String[] stringArray = new String[s];
+        sc.nextLine(); // consume newline again
+        System.out.println("Enter string elements : ");
+        for(int i = 0;i<s;i++){
+            stringArray[i] = sc.nextLine();
+        }
+
+
+        jg.printArray(intArray);
+        jg.printArray(stringArray);
+        sc.close();
     }
 }

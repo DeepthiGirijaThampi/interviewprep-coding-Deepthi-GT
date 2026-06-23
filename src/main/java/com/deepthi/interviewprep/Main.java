@@ -88,7 +88,7 @@ public class Main {
         for(int i = 0;i<s;i++){
             stringArray[i] = sc.nextLine();
         }
-
+        //
 
         jg.printArray(intArray);
         jg.printArray(stringArray);

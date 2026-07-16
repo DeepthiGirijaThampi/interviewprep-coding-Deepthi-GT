@@ -120,5 +120,13 @@ public class Main {
         boolean resultSudoku = sudoku.isValidSudoku(board);
 
         System.out.println(resultSudoku);
+
+        //Linked List Example
+        LinkedListExample list = new LinkedListExample();
+        System.out.println("Linked List : ");
+        list.createList();
+        list.printList();
     }
+
+
 }

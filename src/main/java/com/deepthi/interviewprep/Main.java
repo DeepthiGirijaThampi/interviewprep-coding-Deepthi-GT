@@ -126,6 +126,9 @@ public class Main {
         System.out.println("Linked List : ");
         list.createList();
         list.printList();
+        System.out.println("Linked List : After adding 40" );
+        list.add(40);
+        list.printList();
     }
 
 
